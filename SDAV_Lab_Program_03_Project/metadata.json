@@ -1,0 +1,6 @@
+{
+  "name": "Interactive Continuous Distributions Lab",
+  "description": "Explore continuous probability distributions, Normal and Exponential models, the Central Limit Theorem, and statistical moments through interactive visualizations and reproducible simulations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

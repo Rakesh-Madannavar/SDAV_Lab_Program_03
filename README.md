@@ -4,7 +4,7 @@
 
 This program is part of my SDAV lab work. It demonstrates continuous probability distributions using Python.
 
-### Topics Covered
+## Topics Covered
 
 - Normal Distribution
 - Exponential Distribution
@@ -14,13 +14,13 @@ This program is part of my SDAV lab work. It demonstrates continuous probability
 - Raw and Central Moments
 - Data Visualization using graphs
 
-### Libraries Used
+## Libraries Used
 
 - NumPy
 - Matplotlib
 - SciPy
 
-### How to Run
+## How to Run
 
 1. Install Python on your computer.
 2. Install the required libraries:
@@ -36,16 +36,16 @@ This program is part of my SDAV lab work. It demonstrates continuous probability
    python SDAV_Lab_Program_03.py
    ```
 
-### Output
+## Output
 
 The program displays distribution properties, probability calculations, CLT simulation results, and graphs for different probability distributions.
 
 It also saves the generated graphs as `P3_continuous_distributions.png`.
 
-### Purpose
+## Purpose
 
 The main purpose of this program is to understand continuous probability distributions and learn how statistical concepts can be implemented and visualized using Python.
 
-### Author
+## Author
 
 Rakesh Madannavar

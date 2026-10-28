@@ -15,7 +15,7 @@ This program is part of my SDAV lab work. It demonstrates continuous probability
 - Data Visualization using graphs
 
 ## Libraries Used
-
+- Python
 - NumPy
 - Matplotlib
 - SciPy

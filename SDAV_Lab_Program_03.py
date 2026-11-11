@@ -1,16 +1,13 @@
-# ============================================================
 # Program 3: Continuous Distributions — Normal & Exponential
-# ============================================================
 
-import numpy as np #NumPy for numerical calculations and random data generation,
+import numpy as np 
 import matplotlib.pyplot as plt
-from scipy import stats #SciPy for probability distributions
+from scipy import stats 
 
-np.random.seed(42) # np.random.seed(42) makes our random experiment reproducible
+np.random.seed(42) 
 
-# ============================================================
 # SECTION A: NORMAL DISTRIBUTION
-# ============================================================
+
 print("=" * 60)
 print("NORMAL DISTRIBUTION  N(μ, σ²)")
 print("=" * 60)
@@ -49,9 +46,8 @@ n_in, n_out = 784, 128
 xavier_std = np.sqrt(2 / (n_in + n_out))
 print(f"  For Dense(784→128): σ = {xavier_std:.6f}")
 
-# ============================================================
 # SECTION B: EXPONENTIAL DISTRIBUTION
-# ============================================================
+
 print("\n" + "=" * 60)
 print("EXPONENTIAL DISTRIBUTION  Exp(λ)")
 print("=" * 60)
@@ -73,9 +69,8 @@ print(f"  P(X > 2)            = {1 - exp_main.cdf(2):.6f}")
 print(f"  P(X > 3 | X > 1)    = {(1 - exp_main.cdf(3)) / (1 - exp_main.cdf(1)):.6f}")
 print(f"  Both equal? {abs((1-exp_main.cdf(2)) - (1-exp_main.cdf(3))/(1-exp_main.cdf(1))) < 1e-9}")
 
-# ============================================================
 # SECTION C: CENTRAL LIMIT THEOREM
-# ============================================================
+
 print("\n" + "=" * 60)
 print("CENTRAL LIMIT THEOREM SIMULATION")
 print("=" * 60)
@@ -94,9 +89,9 @@ for dist_name, sampler in distributions_clt.items():
         print(f"    n={n:>3}: mean={np.mean(sample_means):.4f},"
               f" std={np.std(sample_means):.4f}")
 
-# ============================================================
+
 # MOMENTS ANALYSIS
-# ============================================================
+
 print("\n" + "=" * 60)
 print("MOMENTS ANALYSIS")
 print("=" * 60)
@@ -113,9 +108,9 @@ for k in range(1, 5):
     central = np.mean((data_sample - np.mean(data_sample))**k)
     print(f"  μ_{k} = {central:.6f}")
 
-# ============================================================
+
 # VISUALIZATION
-# ============================================================
+
 fig, axes = plt.subplots(3, 3, figsize=(18, 15))
 fig.suptitle('Continuous Distributions — Normal, Exponential & CLT',
              fontsize=16, fontweight='bold')
